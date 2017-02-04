@@ -220,7 +220,7 @@ def main():
     parser = argparse.ArgumentParser(description='Fetch all the courses of your udemy account', prog='udemy-list')
     parser.add_argument('-u', '--username', help='Username / Email', default=None, action='store')
     parser.add_argument('-p', '--password', help='Password', default=None, action='store')
-    parser.add_argument('-ps', '--page_size', help='Number of pages in each course', default=200, action='store')
+    parser.add_argument('-ps', '--page_size', help='Number of courses in each page, max 200', default=200, action='store')
     parser.add_argument('-mp', '--max_pages', help='Max number of pages to fetch. 0 for all pages', default=1, action='store')
     parser.add_argument('--debug', help='Enable debug mode', action='store_const', const=True, default=False)
 
